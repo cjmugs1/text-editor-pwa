@@ -1,10 +1,10 @@
-# text-editor-pwa
+# J.A.T.E. (Just Another Text Editor)
 A text editor built for the web browser. This project has utilized best practices for building Progressive Web Applications (PWA).
 # Just Another Text Editor
 A text editor application, built using the best practices for Progressive Web Applications
 
 ## Link to Application
-[Text Editor]()
+[Text Editor](https://guarded-atoll-53147.herokuapp.com/)
 <br/><br/>
 ## Challenge Description | User Story
 ### **AS A developer**  
@@ -40,4 +40,8 @@ WHEN I deploy to Heroku,
 THEN I should have proper build scripts for a webpack application.  
 <br/>
 
-## Installation
+## Installation & Usage Instructions
+
+After you have cloned the repo, simply navigate to the root directory of the project in your terminal. From there run *npm start:dev* to run a development server. (Make sure to change the webpack config file to mode development before running!)  
+
+If you want to build right away, simply run *npm start* and the scripts will handle the build from there.

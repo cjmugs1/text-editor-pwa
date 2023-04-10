@@ -1,7 +1,6 @@
 const butInstall = document.getElementById('buttonInstall');
 
 // Logic for installing the PWA
-// TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
     // Prevent the mini-infobar from appearing on mobile
     event.preventDefault();
@@ -11,7 +10,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
     butInstall.classList.toggle('hidden', false)
 });
 
-// TODO: Implement a click event handler on the `butInstall` element
+// Adds click listener to the install button
 butInstall.addEventListener('click', async () => {
     const promptEvent = deferredPrompt;
 
@@ -28,7 +27,7 @@ butInstall.addEventListener('click', async () => {
     butInstall.classList.toggle('hidden', true)
 });
 
-// TODO: Add an handler for the `appinstalled` event
+// Handler for the app installed event
 window.addEventListener('appinstalled', (event) => {
     alert('J.A.T.E installed successfully')
     deferredPrompt = null;
